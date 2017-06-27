@@ -4,6 +4,13 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'chonguis-coding-blog',
     environment: environment,
+    contentSecurityPolicy: {'connect-src': "'self' wss://*.firebaseio.com"},
+    firebase: {
+        apiKey: 'xyz',
+        authDomain: "chonguis-coding-blog.firebaseapp.com",
+        databaseURL: "https://chonguis-coding-blog.firebaseio.com",
+        storageBucket: "chonguis-coding-blog.appspot.com"
+      },
     rootURL: '/',
     locationType: 'auto',
     EmberENV: {

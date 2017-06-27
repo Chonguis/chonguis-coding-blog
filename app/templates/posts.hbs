@@ -1,0 +1,7 @@
+{{outlet}}
+
+{{#each model as |post|}}
+  {{#post-component post=post}}
+    <button type="button" class="btn btn-danger" {{action 'deletePost' post.id}}>Delete</button>
+  {{/post-component}}
+{{/each}}
